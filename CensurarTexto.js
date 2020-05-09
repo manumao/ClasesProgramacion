@@ -12,14 +12,16 @@ function obtenerExpresionCensurada(expresion){
 
 function censurarTexto(frase, expresionesCensuradas){
 	let fraseCensurada = frase
+	//let fraseEnMayuscula = frase.toUpperCase
 
 	for (let i = 0; i < expresionesCensuradas.length; i++) {
 		const expresion = expresionesCensuradas[i]
 
 		if (frase.includes(expresion)) {
 			fraseCensurada = fraseCensurada.replace(expresion, obtenerExpresionCensurada(expresion))
-
-		}
+		}//if (frase.includes(expresion)) {
+		//	fraseEnMayuscula = fraseEnMayuscula.replace(expresion, obtenerExpresionCensurada(expresion))
+		} 
 	}
 	return fraseCensurada
 }
