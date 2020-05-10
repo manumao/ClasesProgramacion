@@ -29,6 +29,7 @@ let clientes = [
 
 	
 	 let pagoDeSesion = cliente1.registroDePagos.push(prompt('registro de pago de una sesion'))
+	 pagoDeSesion = parseInt(pagoDeSesion)
 
 
 
